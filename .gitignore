@@ -11,4 +11,8 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/.idea
+
+# common, PHPStorm
+.DS_Store
+.idea/*
+Thumbs.db
