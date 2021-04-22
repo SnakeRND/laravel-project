@@ -24,8 +24,21 @@ class ContactsRequest extends FormRequest
     public function rules()
     {
         return [
-          'subject' => 'required|min:5|max:50',
-          'message' => 'required|min:15|max:500'
+            'name' => 'required',
+            'email' => 'required|email',
+            'subject' => 'required|min:5|max:50',
+            'message' => 'required|min:15|max:500'
         ];
     }
+
+    public function messages()
+    {
+        return [
+          'name.required' => 'Поле имя является обязательным',
+          'email.required' => 'Поле Email является обязательным',
+          'subject.required' => 'Поле Тема является обязательным',
+          'message.required' => 'Поле Сообщение является обязательным',
+        ];
+    }
+
 }
