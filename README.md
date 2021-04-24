@@ -63,13 +63,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Docker
 
-Use:
- 
-for build (once):
-docker-compose build app
-
-for start:
-docker-compose up -d
-
-for stop:
-docker-compose down
+https://laravel.com/docs/8.x/sail
